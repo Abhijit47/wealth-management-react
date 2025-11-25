@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
+// ↓ add this
+import netlifyReactRouter from '@netlify/vite-plugin-react-router';
 
 export default defineConfig({
   plugins: [
@@ -15,6 +17,7 @@ export default defineConfig({
     }),
     reactRouter(),
     tsconfigPaths(),
+    netlifyReactRouter(), // ← add this
   ],
   resolve: {
     alias: {
