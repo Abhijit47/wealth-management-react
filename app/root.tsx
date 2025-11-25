@@ -10,6 +10,7 @@ import {
 
 import type { Route } from './+types/root';
 import './app.css';
+import { seo } from './constants';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -29,17 +30,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <html lang='en'>
       <head>
         <meta charSet='utf-8' />
-        <meta httpEquiv='x-ua-compatible' content='ie=edge' />
-        <title>Hotelhub Luxury Hotel</title>
-        <meta name='description' content='' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta httpEquiv='x-ua-compatible' content='ie=edge' />
+        <title>Ascent Wealth Management</title>
+        <meta name='title' content={seo.title} />
+        <meta name='description' content={seo.description} />
+        <meta name='keywords' content={seo.keywords.join(', ')} />
         {/* <!-- Favicon --> */}
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='56x56'
-          href='/images/fav-icon/icon.png'
-        />
+        <link rel='icon' type='image/png' sizes='130x130' href='/favicon.png' />
         {/* <!-- bootstrap CSS --> */}
         <link
           rel='stylesheet'
@@ -123,7 +121,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src='/js/aos.js' defer></script>
+        <script src='/js/aos.js' async></script>
 
         <script src='/js/vendor/jquery-3.6.2.min.js'></script>
 

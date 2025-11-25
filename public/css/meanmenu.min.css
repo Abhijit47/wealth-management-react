@@ -135,7 +135,7 @@
 }
 .mean-container .mean-bar::after {
   color: #ffffff;
-  content: "MENU";
+  content: 'MENU';
   font-size: 21px;
   left: 5%;
   position: absolute;
@@ -178,7 +178,7 @@
 }
 .mean-container .mean-bar::before {
   color: #fff;
-  content: "hotelhub";
+  content: 'Ascent Wealth';
   font-size: 28px;
   font-weight: 600;
   left: 10px;

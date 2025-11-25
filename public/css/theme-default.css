@@ -11,23 +11,113 @@ body {
   overflow-x: hidden;
 }
 
+.grd-v1 {
+  background-image: linear-gradient(
+    135deg,
+    hsl(41deg 52% 52%) 0%,
+    hsl(40deg 48% 50%) 16%,
+    hsl(40deg 48% 48%) 22%,
+    hsl(40deg 48% 46%) 27%,
+    hsl(39deg 49% 44%) 32%,
+    hsl(39deg 49% 42%) 36%,
+    hsl(39deg 49% 40%) 40%,
+    hsl(38deg 50% 38%) 44%,
+    hsl(38deg 50% 36%) 48%,
+    hsl(38deg 51% 34%) 52%,
+    hsl(37deg 51% 32%) 56%,
+    hsl(37deg 52% 30%) 61%,
+    hsl(36deg 52% 28%) 65%,
+    hsl(35deg 53% 26%) 70%,
+    hsl(35deg 54% 24%) 76%,
+    hsl(34deg 55% 22%) 82%,
+    hsl(33deg 56% 20%) 90%,
+    hsl(32deg 57% 18%) 100%
+  );
+}
+
+// v2 gradient
+.grd-v2 {
+  background: #c59c46;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(197, 156, 70, 1) 0%,
+    rgba(74, 49, 20, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(197, 156, 70, 1) 0%,
+    rgba(74, 49, 20, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(197, 156, 70, 1) 0%,
+    rgba(74, 49, 20, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C59C46", endColorstr="#4A3114", GradientType=0);
+}
+
+/*
+Use this for: buttons, icons, headings, accents.
+--color-1:#C59C46 
+
+Usage: Simple highlights, borders.
+--color-1:#B7A15B
+
+Usage: Secondary typography.
+--color-1:#B5A06B
+
+Usage: Light accents, icons.
+--color-1:#D1BC70
+
+Usage: Background tints, subtle fills.
+--color-1:#E9D990
+
+Usage: Body text, strong headings
+--color-1:#000000
+
+To keep the website premium and minimal.
+--white-minimal: #F8F5EF
+--warm-gray-minimal: #D9D2C6
+--deep-brown-minimal: #3B2A19
+
+*/
+
 :root,
-[data-bs-theme="light"] {
-  --primary-color: #252525;
-  --secondary-color: #52614e; 
+[data-bs-theme='light'] {
+  /* --primary-color: #252525;
+  --secondary-color: #52614e;
   --light: #fff;
   --dark: #161616;
   --title-color: #ffff;
   --sub-title: #d5e5d1;
-  --body-color: #ffff; 
+  --body-color: #ffff;
   --brand-color: #52614e;
-  --btn-color: #6E7C6B;
-  --heading-font: "Playfair Display";
+  --btn-color: #6e7c6b;
+  --heading-font: 'Playfair Display';
   --body-color: #161616;
   --body2-color: #1e1e1e;
   accent-color: var(--green);
-  --light-color: #f3f8f1;
+  --light-color: #f3f8f1; */
 
+  --primary-color: #c59c46;
+  --secondary-color: #b7a15b;
+  --light: #fff;
+  --dark: #161616;
+  --title-color: #c59c46;
+  --sub-title: #b5a06b;
+  --body-color: #ffff;
+  --brand-color: #c59c46;
+  --btn-color: #c59c46;
+  --heading-font: 'Playfair Display';
+  --body-color: #161616;
+  --body2-color: #1e1e1e;
+  /* accent-color: var(--green); */
+
+  --light-color: #e9d990;
+
+  --white-minimal: #f8f5ef;
+  --warm-gray-minimal: #d9d2c6;
+  --deep-brown-minimal: #3b2a19;
 }
 
 html {
@@ -35,12 +125,12 @@ html {
 }
 
 body {
-  color: #7A7A7A;
+  color: #7a7a7a;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   background: #161616;
 }
 
@@ -56,7 +146,7 @@ h4,
 h5,
 h6 {
   color: #fff;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-style: normal;
   margin-bottom: 0;
   margin-top: 10px;
@@ -358,7 +448,7 @@ ul {
 }
 
 .border-tops {
-  border-top: 1px solid rgba(255,255,255,0.10196078431372549);
+  border-top: 1px solid rgba(255, 255, 255, 0.10196078431372549);
   margin-top: 29px;
 }
 
