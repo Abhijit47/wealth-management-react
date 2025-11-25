@@ -29,7 +29,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <html lang='en'>
       <head>
         <meta charSet='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta httpEquiv='x-ua-compatible' content='ie=edge' />
         <title>Hotelhub Luxury Hotel</title>
         <meta name='description' content='' />
@@ -124,7 +123,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src='/js/aos.js'></script>
+        <script src='/js/aos.js' defer></script>
 
         <script src='/js/vendor/jquery-3.6.2.min.js'></script>
 
@@ -212,7 +211,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
     <main className='pt-16 p-4 container mx-auto'>
-      <h1>{message} as</h1>
+      <h1>{message}</h1>
       <p>{details}</p>
       {stack && (
         <pre className='w-full p-4 overflow-x-auto'>
