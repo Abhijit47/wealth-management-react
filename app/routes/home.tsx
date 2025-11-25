@@ -8,7 +8,7 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-const isDev = import.meta.env.DEV ? false : true;
+const isDev = import.meta.env.DEV;
 
 export default function Home() {
   return (
