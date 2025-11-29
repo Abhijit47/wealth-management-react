@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router';
 
 const services = [
@@ -61,12 +61,14 @@ const services = [
 ];
 
 export default function ServiceSection() {
-  const [selectedService, setSelectedService] = useState('');
+  // const [selectedService, setSelectedService] = useState('');
   const [show, setShow] = useState(true);
 
   function toggleModal() {
     return setShow((prev) => !prev);
   }
+
+  console.log({ show });
 
   return (
     <div className='service-section'>
@@ -261,7 +263,7 @@ export default function ServiceSection() {
               </div>
             </div>
 
-            <CalculatorModal isShow={show} onToggle={toggleModal} />
+            {/* <CalculatorModal isShow={show} onToggle={toggleModal} /> */}
           </div>
         </div>
         <div className='hotelhub_slider-wrapper pt-30' data-aos='fade-up'>
@@ -442,27 +444,27 @@ export default function ServiceSection() {
   );
 }
 
-function CalculatorModal({
-  isShow,
-  onToggle,
-}: {
-  isShow: boolean;
-  onToggle: () => void;
-}) {
-  return (
-    <Modal show={isShow} onHide={onToggle}>
-      <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-      <Modal.Footer>
-        <Button variant='secondary' onClick={onToggle}>
-          Close
-        </Button>
-        <Button variant='primary' onClick={onToggle}>
-          Save Changes
-        </Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
+// function CalculatorModal({
+//   isShow,
+//   onToggle,
+// }: {
+//   isShow: boolean;
+//   onToggle: () => void;
+// }) {
+//   return (
+//     <Modal show={isShow} onHide={onToggle}>
+//       <Modal.Header closeButton>
+//         <Modal.Title>Modal heading</Modal.Title>
+//       </Modal.Header>
+//       <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+//       <Modal.Footer>
+//         <Button variant='secondary' onClick={onToggle}>
+//           Close
+//         </Button>
+//         <Button variant='primary' onClick={onToggle}>
+//           Save Changes
+//         </Button>
+//       </Modal.Footer>
+//     </Modal>
+//   );
+// }
