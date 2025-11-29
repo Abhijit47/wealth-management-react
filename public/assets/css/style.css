@@ -348,7 +348,7 @@ p.sidebar_info {
 <!-- ============================================================== -->*/
 
 .hero-section {
-  background: url(../images/slider/banner.jpg);
+  background: url(/images/slider/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   height: 820px;
@@ -537,7 +537,7 @@ a.hotelhub-btn:hover {
   bottom: -35%;
   height: 100%;
   width: 107%;
-  background: url(../images/main-home/line-shape.png);
+  background: url(/images/main-home/line-shape.png);
   background-repeat: no-repeat;
   z-index: -1;
 } */
@@ -564,7 +564,7 @@ a.hotelhub-btn:hover {
   content: '';
   right: 0;
   color: #fff;
-  background: url(../images/slider/clander-icon.png);
+  background: url(/images/slider/clander-icon.png);
 }
 .booking-input-box:before {
   position: absolute;
@@ -641,7 +641,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* Hero Style four */
 
 .banner_area_4 {
-    background: url(../images/home-four/banner_bg4.jpg);
+    background: url(/images/home-four/banner_bg4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -756,7 +756,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 .hero-slider-img{
-  background: url(../images/home-five/banner_bg.png);
+  background: url(/images/home-five/banner_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -765,7 +765,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 100%;
 }
 .hero-slider-img.two  {
-  background: url(../images/home-four/banner_bg4.jpg);
+  background: url(/images/home-four/banner_bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -935,7 +935,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* counter box */
 
 .counter-single-box {
-  background: url(../images/main-home/counter_thumb.jpg);
+  background: url(/images/main-home/counter_thumb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1090,9 +1090,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   top: 0;
   background-color: var(--btn-color);
-  background-image: url(../images/main-home/mask-btn2.png);
-  -webkit-mask: url(../images/main-home/mask-btn2.png);
-  mask: url(../images/main-home/mask-btn2.png);
+  background-image: url(/images/main-home/mask-btn2.png);
+  -webkit-mask: url(/images/main-home/mask-btn2.png);
+  mask: url(/images/main-home/mask-btn2.png);
   -webkit-mask-size: 2300% 100%;
   mask-size: 2300% 100%;
   animation: mask_animation_2 0.7s steps(22) forwards;
@@ -1413,7 +1413,7 @@ span.chosse-price {
   margin-right: 10px;
 }
 .counter-single-box.two {
-  background: url(../images/main-home/bx-2.png);
+  background: url(/images/main-home/bx-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1770,7 +1770,7 @@ ul.service_list li i {
 <!-- =====================================-->*/
 
 .video-section {
-  background-image: url(../images/main-home/vedio_bg.jpg);
+  background-image: url(/images/main-home/vedio_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1839,7 +1839,7 @@ ul.service_list li i {
   content: '';
   right: -9%;
   bottom: -10%;
-  background: url(../images/main-home/tesi-shape.png);
+  background: url(/images/main-home/tesi-shape.png);
   background-repeat: no-repeat;
   height: 50%;
   width: 50%;
@@ -2133,9 +2133,9 @@ span.category {
   border: 1px solid #424242;
 }
 .blog-section.style-two .hotelhub-btn a:after {
-  background-image: url(../images/main-home/mask-btn3.png);
-  -webkit-mask: url(../images/main-home/mask-btn3.png);
-  mask: url(../images/main-home/mask-btn3.png);
+  background-image: url(/images/main-home/mask-btn3.png);
+  -webkit-mask: url(/images/main-home/mask-btn3.png);
+  mask: url(/images/main-home/mask-btn3.png);
 }
 
 /*
@@ -2607,7 +2607,7 @@ p.widget-froms {
 <!-- ============================================================== -->*/
 
 .hero-section.style_two {
-  background: url(../images/home-two/banner2.jpg);
+  background: url(/images/home-two/banner2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   height: 1010px;
@@ -2651,7 +2651,7 @@ p.widget-froms {
   margin-bottom: 45px;
 }
 .hero-rating-bx {
-  background: url(../images/home-two/review-bg.jpg);
+  background: url(/images/home-two/review-bg.jpg);
   padding: 31px 40px 35px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2767,7 +2767,7 @@ p.widget-froms {
 .counter-single-box.box2 {
   display: flex;
   align-items: center;
-  background: url(../images/home-two/counter-bx.png);
+  background: url(/images/home-two/counter-bx.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2828,7 +2828,7 @@ p.widget-froms {
   top: 0;
   height: 100%;
   width: 100%;
-  background: url(../images/home-two/boking-shape.png);
+  background: url(/images/home-two/boking-shape.png);
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -3195,7 +3195,7 @@ p.widget-froms {
 <!-- ============================================================== -->*/
 
 .choose-section.style-two {
-  background: url(../images/home-two/choose-bg.jpg);
+  background: url(/images/home-two/choose-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3753,7 +3753,7 @@ span.wood-animation img {
 <!-- ============================================================== -->*/
 
 .hero-section.style-three {
-  background: url(../images/home-three/banner.jpg);
+  background: url(/images/home-three/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   height: 900px;
@@ -4082,7 +4082,7 @@ span.hero_coun-des {
 
 /* choose section style three */
 .choose-section.style-two.three {
-  background: url(../images/home-three/chose-bg.png);
+  background: url(/images/home-three/chose-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4383,7 +4383,7 @@ span.hero_coun-des {
   bottom: -50px;
 }
 .choose-thumb.style_four .counter-single-box.two {
-  background: url(../images/home-three/choose-shpae.png);
+  background: url(/images/home-three/choose-shpae.png);
   background-repeat: no-repeat;
   background-size: cover;
   left: -115px;
@@ -4517,7 +4517,7 @@ span.hero_coun-des {
 <!-- ============================================================== -->*/
 
 .breatcome-section {
-  background: url(../images/resource/breadcumb.jpg);
+  background: url(/images/resource/breadcumb.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4570,50 +4570,50 @@ ul.breatcome-item li a i {
 }
 
 .breatcome-section.style_two {
-  background: url(../images/resource/brd-contact_ng.jpg);
+  background: url(/images/resource/brd-contact_ng.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breatcome-section.style_three {
-  background: url(../images/resource/breadcumb_bg-3.jpg);
+  background: url(/images/resource/breadcumb_bg-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .breatcome-section.style_four {
-  background: url(../images/resource/breadcumb4.png);
+  background: url(/images/resource/breadcumb4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .breatcome-section.style_five {
-  background: url(../images/resource/breadcumb5.png);
+  background: url(/images/resource/breadcumb5.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .breatcome-section.style_six {
-  background: url(../images/resource/breadcumb5.jpg);
+  background: url(/images/resource/breadcumb5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .breatcome-section.style_seven {
-  background: url(../images/resource/breadcumb6.jpg);
+  background: url(/images/resource/breadcumb6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .breatcome-section.style_eight {
-  background: url(../images/resource/breadcumb8.jpg);
+  background: url(/images/resource/breadcumb8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .breatcome-section.style_nine {
-  background: url(../images/resource/breadcum9.jpg);
+  background: url(/images/resource/breadcum9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4624,7 +4624,7 @@ ul.breatcome-item li a i {
 <!-- ============================================================== -->*/
 
 .contact-section {
-  background: url(../images/resource/contact_bg.png);
+  background: url(/images/resource/contact_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -5078,7 +5078,7 @@ h2.price.price-monthly {
 <!-- HotelHub Start Over View Section -->
 <!-- ============================================================== -->*/
 .dine-over_view {
-  background: url(../images/resource/dine-over-bg.jpg);
+  background: url(/images/resource/dine-over-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -5113,7 +5113,7 @@ h2.price.price-monthly {
 }
 
 .dine-over_view.join-section {
-  background: url(../images/resource/join-bg.jpg);
+  background: url(/images/resource/join-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -5124,7 +5124,7 @@ h2.price.price-monthly {
   margin-top: 43px;
 }
 .dine-over_view {
-  background: url(../images/resource/dine-over-bg2.jpg);
+  background: url(/images/resource/dine-over-bg2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -5980,7 +5980,7 @@ span.dwnlod-hvr i {
 /* Compani contact */
 
 .hotelhub-company-contact {
-  background: url(../images/resource/company-bg.png);
+  background: url(/images/resource/company-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -6508,7 +6508,7 @@ input.comment-box::placeholder {
   padding: 120px 40px 120px;
 }
 .faq-itm {
-  background: url(../images/resource/pricing-shape.png);
+  background: url(/images/resource/pricing-shape.png);
   background-repeat: no-repeat;
   padding: 116px 34px 219px 241px;
   background-position: center right;
@@ -7752,7 +7752,7 @@ Start Contact Inner Page
 .row.contact-info_item {
   border-radius: 20px;
   margin: 0;
-  background: url(../images/resource/contact-bg.png);
+  background: url(/images/resource/contact-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
