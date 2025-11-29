@@ -8,6 +8,14 @@ import {
   ScrollRestoration,
 } from 'react-router';
 
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import type { Route } from './+types/root';
 import './app.css';
 import { seo } from './constants';
@@ -41,79 +49,80 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {/* <!-- bootstrap CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/bootstrap.min.css'
+          // href='../assets/css/bootstrap.min.css'
+          href='/assets/css/bootstrap.min.css'
           type='text/css'
           media='all'
         />
         {/* <!-- carousel CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/owl.carousel.min.css'
+          href='/assets/css/owl.carousel.min.css'
           type='text/css'
           media='all'
         />
         {/* <!-- font-awesome CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/all.min.css'
+          href='/assets/css/all.min.css'
           type='text/css'
           media='all'
         />
         {/* <!-- font-flaticon CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/flaticon.css'
+          href='/assets/css/flaticon.css'
           type='text/css'
           media='all'
         />
         {/* <!-- theme-default CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/theme-default.css'
+          href='/assets/css/theme-default.css'
           type='text/css'
           media='all'
         />
         {/* <!-- meanmenu CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/meanmenu.min.css'
+          href='/assets/css/meanmenu.min.css'
           type='text/css'
           media='all'
         />
         {/* <!-- venobox CSS --> */}
         <link
           rel='stylesheet'
-          href='/venobox/venobox.css'
+          href='/assets/venobox/venobox.css'
           type='text/css'
           media='all'
         />
         {/* <!-- bootstrap icons --> */}
         <link
           rel='stylesheet'
-          href='/css/bootstrap-icons.css'
+          href='/assets/css/bootstrap-icons.css'
           type='text/css'
           media='all'
         />
         {/* <!-- Main Style CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/style.css'
+          href='/assets/css/style.css'
           type='text/css'
           media='all'
         />
-        <link rel='stylesheet' href='/css/odometer-theme-default.css' />
+        <link rel='stylesheet' href='./assets/css/odometer-theme-default.css' />
         {/* <!-- responsive CSS --> */}
         <link
           rel='stylesheet'
-          href='/css/responsive.css'
+          href='/assets/css/responsive.css'
           type='text/css'
           media='all'
         />
-        <link rel='stylesheet' href='/css/swiper.min.css' />
+        <link rel='stylesheet' href='./assets/css/swiper.min.css' />
 
         {/* <!-- modernizr js --> */}
-        <script src='/js/vendor/modernizr-3.5.0.min.js'></script>
-        <link rel='stylesheet' href='/css/aos.css' />
+        <script src='/assets/js/vendor/modernizr-3.5.0.min.js'></script>
+        <link rel='stylesheet' href='/assets/css/aos.css' />
         <Meta />
         <Links />
       </head>
@@ -121,35 +130,35 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src='/js/aos.js' async></script>
+        <script src='/assets/js/aos.js'></script>
 
-        <script src='/js/vendor/jquery-3.6.2.min.js'></script>
+        <script src='/assets/js/vendor/jquery-3.6.2.min.js'></script>
 
-        <script src='/js/odometer.min.js'></script>
+        <script src='/assets/js/odometer.min.js'></script>
 
-        <script src='/js/bootstrap.min.js'></script>
+        <script src='/assets/js/bootstrap.min.js'></script>
 
-        <script src='/js/imagesloaded.pkgd.min.js'></script>
+        <script src='/assets/js/imagesloaded.pkgd.min.js'></script>
 
-        <script src='/venobox/venobox.js'></script>
+        <script src='/assets/venobox/venobox.js'></script>
 
-        <script src='/venobox/venobox.min.js'></script>
+        <script src='/assets/venobox/venobox.min.js'></script>
 
-        <script src='/js/jquery.meanmenu.js'></script>
+        <script src='/assets/js/jquery.meanmenu.js'></script>
 
-        <script src='/js/jquery.scrollUp.js'></script>
+        <script src='/assets/js/jquery.scrollUp.js'></script>
 
-        <script src='/js/owl.carousel.min.js'></script>
+        <script src='/assets/js/owl.carousel.min.js'></script>
 
-        <script src='/js/appear.js'></script>
+        <script src='/assets/js/appear.js'></script>
 
-        <script src='/js/jquery.barfiller.js'></script>
+        <script src='/assets/js/jquery.barfiller.js'></script>
 
-        <script src='/js/swiper.min.js'></script>
+        <script src='/assets/js/swiper.min.js'></script>
 
-        <script src='/js/theme.js'></script>
+        <script src='/assets/js/theme.js'></script>
 
-        <script src='/js/my.js'></script>
+        <script src='/assets/js/my.js'></script>
 
         {/* <script>
       document
@@ -188,7 +197,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    // <AosProvider>
+    <Outlet />
+    // </AosProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

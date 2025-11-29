@@ -6,6 +6,7 @@ import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 // ↓ add this
 import netlifyReactRouter from '@netlify/vite-plugin-react-router';
+import devtoolsJson from 'vite-plugin-devtools-json';
 
 export default defineConfig({
   plugins: [
@@ -18,6 +19,7 @@ export default defineConfig({
     reactRouter(),
     tsconfigPaths(),
     netlifyReactRouter(), // ← add this
+    devtoolsJson(),
   ],
   resolve: {
     alias: {
