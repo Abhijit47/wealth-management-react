@@ -1,4 +1,8 @@
+import { testimonials } from '~/constants';
+
 export default function TestimonialSection() {
+  const doubleCopy = [...testimonials, ...testimonials, ...testimonials];
+
   return (
     <div className='testimonial-section'>
       <div className='container'>
@@ -10,6 +14,13 @@ export default function TestimonialSection() {
               </h4>
               <h1>What Say Our Customers</h1>
               <h1>About Services</h1>
+
+              <blockquote>
+                <p>
+                  "Don't save what is left after spending, but spend what is
+                  left after saving" - Warren Buffet
+                </p>
+              </blockquote>
             </div>
           </div>
           <div className='col-lg-4'>
@@ -23,11 +34,63 @@ export default function TestimonialSection() {
           </div>
         </div>
       </div>
+
       <div className='container-fluid'>
         <div className='hotelhub_slider-wrapper' data-aos='fade-up'>
           <div className='swiper testi_list1'>
             <div className='swiper-wrapper'>
-              <div className='swiper-slide'>
+              {doubleCopy.map((testimonial) => (
+                <div className='swiper-slide h-full' key={testimonial.id}>
+                  <div className='row h-full'>
+                    <div className='col-lg-12'>
+                      <div className='testi-single-box'>
+                        <div className='testi-content'>
+                          <ul className='testi-rating'>
+                            <li>
+                              <i className='bi bi-star-fill'></i>
+                            </li>
+                            <li>
+                              <i className='bi bi-star-fill'></i>
+                            </li>
+                            <li>
+                              <i className='bi bi-star-fill'></i>
+                            </li>
+                            <li>
+                              <i className='bi bi-star-fill'></i>
+                            </li>
+                            <li>
+                              <i className='bi bi-star-fill'></i>
+                            </li>
+                            <li>(4.5)</li>
+                          </ul>
+                          <div className='testi-desc'>
+                            <p>{testimonial.message}</p>
+                          </div>
+                        </div>
+                        <div className='user-info'>
+                          <div className='people-pic ratio ratio-1x1 w-full h-full'>
+                            <img
+                              src={testimonial.image}
+                              alt={testimonial.name}
+                              className='object-cover rounded-circle'
+                            />
+                          </div>
+                          <div className='user-name'>
+                            <h4>{testimonial.name}</h4>
+                            <h6>{testimonial.designation}</h6>
+                          </div>
+                        </div>
+                        <div className='hotelhub-hover-btn hover-btn'></div>
+                        <div className='hotelhub-hover-btn hover-btn2'></div>
+                        <div className='hotelhub-hover-btn hover-btn3'></div>
+                        <div className='hotelhub-hover-btn hover-btn4'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              {/* <div className='swiper-slide'>
                 <div className='row'>
                   <div className='col-lg-12'>
                     <div className='testi-single-box'>
@@ -390,7 +453,7 @@ export default function TestimonialSection() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='hotelhub-slider-dots3'>

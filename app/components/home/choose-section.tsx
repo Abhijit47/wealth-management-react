@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 export default function ChooseSection() {
   return (
     <div className='choose-section'>
@@ -8,13 +10,20 @@ export default function ChooseSection() {
               <h4>
                 <i className='flaticon flaticon-right-arrow'></i>WHY CHOOS US?
               </h4>
-              <h1>Why We’re the Ideal Destination</h1>
-              <h1>for Your Getaway</h1>
+              <h1>Why Risk Profiling is important</h1>
+              <h1>for investors?</h1>
               <p>
-                Appropriately brand diverse schemas with orthogonal supply
-                chains. Globally benchmark functionalized functionalities with
-                24/365 metrics. Holisticly drive sticky products through
-                emerging metrics
+                Most investors start with unrealistic expectations about risk
+                and return. Unrealistic expectations can quickly become
+                unfulfilled expectations and unfulfilled expectations tend to
+                cause grief for all concerned. There is often a gap between the
+                level of risk which a client would normally choose to take,
+                their risk tolerance, and the risk associated with the return
+                required to achieve their goals. profiling is a process for
+                finding the optimal level of investment risk for your client by
+                balancing their risk required, risk capacity and their
+                individual risk tolerance. There is often a mismatch between
+                risk required, capacity and tolerance.
               </p>
             </div>
             <div className='abou_list-item two'>
@@ -22,11 +31,24 @@ export default function ChooseSection() {
                 <ul>
                   <li>
                     <img src='/images/main-home/aroow.png' alt='' />
-                    Award-Winning Dining
+                    Risk Tolerance is the level of financial risk the client is
+                    emotionally comfortable with.
                   </li>
                   <li>
                     <img src='/images/main-home/aroow.png' alt='' />
-                    Flexible Booking Options
+                    For example,How much a person is willing for their portfolio
+                    to diminish for a chance to make bigger returns.
+                  </li>
+                  <li>
+                    <img src='/images/main-home/aroow.png' alt='' />
+                    Risk Required is the risk associated with the return
+                    required to achieve the client's goals from the financial
+                    resources available.
+                  </li>
+                  <li>
+                    <img src='/images/main-home/aroow.png' alt='' />
+                    Risk Capacity is the level of financial risk the client can
+                    afford to take.
                   </li>
                 </ul>
               </div>
@@ -47,14 +69,14 @@ export default function ChooseSection() {
               <ul>
                 <li>
                   <img src='/images/main-home/check.png' alt='' />
-                  These features emphasize quality and comfort
+                  Client Risk Profile Questionnaire
                 </li>
               </ul>
             </div>
             <div className='hotelhub-btn'>
-              <a href='restaurant.html'>
-                Learn More <i className='flaticon flaticon-right-arrow'></i>
-              </a>
+              <Link to='https://forms.gle/F1k3s6qWDpFLyQ2D8' target='_blank'>
+                Know More <i className='flaticon flaticon-right-arrow'></i>
+              </Link>
             </div>
           </div>
           <div className='col-lg-5 col-md-12' data-aos='fade-left'>

@@ -8,15 +8,22 @@ export default function AboutSection() {
               <h4>
                 <i className='flaticon flaticon-right-arrow'></i>Our Hotel
               </h4>
-              <h1>Your Gateway to Comfort,</h1>
-              <h1>Luxury, and Unmatched</h1>
-              <h1>World our Hotel</h1>
-              <p>
+              <h1>It's Time To Begin, </h1>
+              <h1>Your Ascent!</h1>
+              <blockquote>
+                <p>
+                  "When a management with a reputation for brilliance, tackles a
+                  business with a reputation for bad economics, it is the
+                  reputation of the business that remains intact" – Warren
+                  Buffett
+                </p>
+              </blockquote>
+              {/* <p>
                 Appropriately brand diverse schemas with orthogonal supply
                 chains. Globally benchmark functionalized functionalities with
                 24/365 metrics. Holisticly drive sticky products through
                 emerging metrics
-              </p>
+              </p> */}
             </div>
             <div className='abou_list-item'>
               <div className='abou_list'>
@@ -44,7 +51,10 @@ export default function AboutSection() {
           </div>
           <div className='col-lg-6' data-aos='fade-up'>
             <div className='about-thumb'>
-              <img src='/images/main-home/about_thumb.jpg' alt='' />
+              <img
+                src='https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/954self.png'
+                alt=''
+              />
               <div className='counter-right-side cursor-scale'>
                 <div className='counter-single-box' data-aos='fade-up'>
                   <div className='counter_icon'>
