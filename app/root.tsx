@@ -8,7 +8,7 @@ import {
   ScrollRestoration,
 } from 'react-router';
 
-import '@flaticon/flaticon-uicons/css/all/all.css';
+// import '@flaticon/flaticon-uicons/css/all/all.css';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
