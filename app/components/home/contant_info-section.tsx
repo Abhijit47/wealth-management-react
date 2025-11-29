@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 export default function ContantInfoSection() {
   return (
     <div className='contant_info-section' data-aos='fade-up'>
@@ -12,8 +14,8 @@ export default function ContantInfoSection() {
                     <i className='fa-solid fa-phone'></i>
                   </div>
                   <div className='info-content'>
-                    <p>Call us Anitme</p>
-                    <h3>+00 123 (4567) 890</h3>
+                    <p>Call us Any tme</p>
+                    <Link to='tel:+917305953668'>+91 7305953668</Link>
                   </div>
                 </div>
               </div>
@@ -24,7 +26,9 @@ export default function ContantInfoSection() {
                   </div>
                   <div className='info-content'>
                     <p>Send us E-Mail</p>
-                    <h3>example@gmail.com</h3>
+                    <Link to='mailto:ascentwealth.invest@gmail.com'>
+                      ascentwealth.invest@gmail.com
+                    </Link>
                   </div>
                 </div>
               </div>

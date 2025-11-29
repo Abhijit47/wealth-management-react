@@ -8,7 +8,9 @@ import {
   ScrollRestoration,
 } from 'react-router';
 
+import '@flaticon/flaticon-uicons/css/all/all.css';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Import Swiper styles
 import 'swiper/css';
@@ -97,12 +99,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
           media='all'
         />
         {/* <!-- bootstrap icons --> */}
-        <link
+        {/* <link
           rel='stylesheet'
           href='/assets/css/bootstrap-icons.css'
           type='text/css'
           media='all'
-        />
+        /> */}
         {/* <!-- Main Style CSS --> */}
         <link
           rel='stylesheet'
@@ -136,7 +138,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         <script src='/assets/js/odometer.min.js'></script>
 
-        <script src='/assets/js/bootstrap.min.js'></script>
+        {/* <script src='/assets/js/bootstrap.min.js'></script> */}
 
         <script src='/assets/js/imagesloaded.pkgd.min.js'></script>
 

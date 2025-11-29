@@ -1,4 +1,5 @@
-import { Link, NavLink } from 'react-router';
+import { Link } from 'react-router';
+import { footerLinks } from '~/constants';
 
 export default function Footer() {
   return (
@@ -9,92 +10,76 @@ export default function Footer() {
             <div className='widget'>
               <div className='footer_widget'>
                 <div className='company-logo'>
-                  <NavLink to='/'>
+                  <Link to='/'>
                     <img src='/logo.svg' alt='logo' width={80} height={80} />
-                  </NavLink>
+                  </Link>
                 </div>
                 <p>
-                  Conveniently fashion market positioning readiness before
-                  sticky communities. Assertively matrix multif sources through
-                  team building
+                  We are an AMFI registered Mutual Funds Distributor engaged in
+                  distribution of Equity, Debt, Hybrid, Sector and Thematic
+                  Mutual Funds. We also provide services with respect to various
+                  secondary Bonds, Equity trading, NCDs, Life and Health
+                  Insurance, Corporate FDs and Estate Planning solutions etc.
+                </p>
+                <p>
+                  AMFI Registered Mutual Funds Distributor <br />
+                  <strong>(ARN 109866)</strong>
                 </p>
                 <div className='hotelhub-social-icon cursor-scale small'>
                   <h3 className='follow-title'>Follow Us On :</h3>
-                  <Link to='#'>
-                    <span className='visually-hidden'>fb: </span>
-                    <i className='fab fa-facebook-f'></i>
-                  </Link>
-                  <Link to='#'>
-                    <span className='visually-hidden'>ln: </span>
-                    <i className='fa-brands fa-linkedin-in'> </i>
-                  </Link>
-                  <Link to='#'>
-                    <span className='visually-hidden'>x: </span>
-                    <i className='bi bi-twitter'></i>
-                  </Link>
-                  <Link to='#'>
-                    <span className='visually-hidden'>pin: </span>
-                    <i className='fab fa-pinterest-p'></i>
-                  </Link>
+                  {footerLinks.followUs.map((link) => (
+                    <Link key={link.id} to={link.href} target='_blank'>
+                      <span className='visually-hidden'>social: </span>
+                      <i className={link.label}></i>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
-          <div className='col-lg-2 col-md-6' data-aos='fade-up'>
+          <div className='col-lg-3 col-md-6' data-aos='fade-up'>
             <div className='widget widget-nav-menu'>
-              <h4 className='widget-title'>About Us</h4>
+              <h4 className='widget-title'>Products</h4>
               <div className='menu-quick-link-content'>
                 <ul className='footer-menu cursor-scale small'>
-                  <li>
-                    <a href='#'> About Hotel </a>
-                  </li>
-                  <li>
-                    <a href='#'> Rooms & Suites </a>
-                  </li>
-                  <li>
-                    <a href='#'> Reservations </a>
-                  </li>
-                  <li>
-                    <a href='#'> Latest Blog </a>
-                  </li>
-                  <li>
-                    <a href='#'> Our Team </a>
-                  </li>
-                  <li>
-                    <a href='#'> Contact Us </a>
-                  </li>
+                  {footerLinks.products.map((link) => (
+                    <li key={link.id}>
+                      <Link to={link.href}> {link.label} </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
-          <div className='col-lg-2 col-md-6' data-aos='fade-up'>
+          <div className='col-lg-3 col-md-6' data-aos='fade-up'>
             <div className='widget widget-nav-menu'>
               <h4 className='widget-title'>Usefull Links</h4>
               <div className='menu-quick-link-content'>
                 <ul className='footer-menu cursor-scale small'>
-                  <li>
-                    <a href='#'> Booking </a>
-                  </li>
-                  <li>
-                    <a href='#'> Rooms & Suites </a>
-                  </li>
-                  <li>
-                    <a href='#'> Testimonials </a>
-                  </li>
-                  <li>
-                    <a href='#'> Career </a>
-                  </li>
-                  <li>
-                    <a href='#'> Privecy Policy </a>
-                  </li>
-                  <li>
-                    <a href='#'> FAQ's </a>
-                  </li>
+                  {footerLinks.useFullLinks.map((link) => (
+                    <li key={link.id}>
+                      <Link to={link.href}> {link.label} </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-md-6' data-aos='fade-up'>
+          <div className='col-lg-2 col-md-6' data-aos='fade-up'>
+            <div className='widget widget-nav-menu'>
+              <h4 className='widget-title'>Connect</h4>
+              <div className='menu-quick-link-content'>
+                <ul className='footer-menu cursor-scale small'>
+                  {footerLinks.useFullLinks.map((link) => (
+                    <li key={link.id}>
+                      <Link to={link.href}> {link.label} </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* <div className='col-lg-4 col-md-6' data-aos='fade-up'>
             <div className='widget hotelhub-footer_widget'>
               <h4 className='widget-title'>Our Galary</h4>
               <div className='footer-recent'>
@@ -124,8 +109,41 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
+
+        <div className={'mt-5 text-secondary'}>
+          <p>
+            Risk Factors – Investments in Mutual Funds are subject to Market
+            Risks. Read all scheme related documents carefully before investing.
+            Mutual Fund Schemes do not assure or guarantee any returns. Past
+            performances of any Mutual Fund Scheme may or may not be sustained
+            in future. There is no guarantee that the investment objective of
+            any suggested scheme shall be achieved. All existing and prospective
+            investors are advised to check and evaluate the Exit loads and other
+            cost structure (TER) applicable at the time of making the investment
+            before finalizing on any investment decision for Mutual Funds
+            schemes. We deal in Regular Plans only for Mutual Fund Schemes and
+            earn a Trailing Commission on client investments. Disclosure For
+            Commission earnings is made to clients at the time of investments.
+            Option of Direct Plan for every Mutual Fund Scheme is available to
+            investors offering advantage of lower expense ratio. We are not
+            entitled to earn any commission on Direct plans. Hence we do not
+            deal in Direct Plans.
+          </p>
+          <p>
+            AMFI Registered Mutual Fund Distributor | ARN-109866 | Date of
+            initial registration – 02-Apr-2025 | Current validity of ARN –
+            01-Apr-2028
+          </p>
+          <p>
+            Grievance Officer- Ascent Wealth |{' '}
+            <Link to='mailto:ascentwealth.invest@gmail.com'>
+              ascentwealth.invest@gmail.com
+            </Link>
+          </p>
+        </div>
+
         <div className='row footer-btm d-flex align-items-center'>
           <div className='col-lg-6 col-md-6'>
             <div className='hotelhub-company-desc'>

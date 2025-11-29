@@ -5,7 +5,10 @@ export default function AppoinmentSection() {
         <div className='row appoinment'>
           <div className='col-lg-6' data-aos='fade-up'>
             <div className='contact_thumb'>
-              <img src='/images/main-home/contact_img.jpg' alt='' />
+              <img
+                src='https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                alt=''
+              />
             </div>
           </div>
           <div className='col-lg-6' data-aos='fade-up'>
