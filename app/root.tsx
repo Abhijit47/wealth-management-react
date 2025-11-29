@@ -138,7 +138,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         <script src='/assets/js/odometer.min.js'></script>
 
-        {/* <script src='/assets/js/bootstrap.min.js'></script> */}
+        <script src='/assets/js/bootstrap.min.js'></script>
 
         <script src='/assets/js/imagesloaded.pkgd.min.js'></script>
 
